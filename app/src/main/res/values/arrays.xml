@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="menus">
+        <item>@array/menu_1</item>
+        <item>@array/menu_2</item>
+        <item>@array/menu_3</item>
+        <item>@array/menu_4</item>
+    </array>
+<!--    <array name="menu_colors">-->
+<!--        <item>@color/point_1</item>-->
+<!--        <item>@color/point_2</item>-->
+<!--        <item>@color/point_3</item>-->
+<!--    </array>-->
+
+    <array name="menu_colors">
+        <item>#fff2e8</item>
+        <item>#ccc1b9</item>
+        <item>#99908a</item>
+        <item>#fff0be</item>
+        <item>#655f5b</item>
+        <item>#ccc0b8</item>
+
+        <item>#fff1e7</item>
+        <item>#ccc098</item>
+        <item>#cec9b6</item>
+        <item>#fff8e1</item>
+    </array>
+    <string-array name="menu_1">
+        <item name="menu_1_course">Pathway 1</item>
+        <item name="menu_1_title">Building\nyour first app</item>
+        <item name="menu_1_desc">Install Android Studio\nGet started</item>
+        <item name="menu_1_date">10 Dec 2022</item>
+    </string-array>
+
+    <string-array name="menu_2">
+        <item name="menu_1_course">Pathway 2</item>
+        <item name="menu_1_title">Building\nan Interactive App</item>
+        <item name="menu_1_desc">Basic Android app anatomy\nImage resources and compatibility\nLearn to help yourself</item>
+        <item name="menu_1_date">10 Dec 2022</item>
+    </string-array>
+
+    <string-array name="menu_3">
+        <item name="menu_1_course">Pathway 3</item>
+        <item name="menu_1_title"> Layouts</item>
+        <item name="menu_1_desc">Linear layout using the Layout Editor\nAdd user interactivity\nConstraint layout using the Layout Editor\nData-binding basics</item>
+        <item name="menu_1_date">10 Dec 2022</item>
+    </string-array>
+
+    <string-array name="menu_4">
+        <item name="menu_1_course">Pathway 4</item>
+        <item name="menu_1_title">Navigation</item>
+        <item name="menu_1_desc">Create a fragment\nDefine navigation paths\nStart an external activity</item>
+        <item name="menu_1_date">10 Dec 2022</item>
+    </string-array>
+
+
+</resources>
