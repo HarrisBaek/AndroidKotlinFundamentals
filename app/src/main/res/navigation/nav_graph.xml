@@ -8,22 +8,41 @@
     <fragment
         android:id="@+id/HomeFragment"
         android:name="com.harris.fundamentals.home.HomeFragment"
-        android:label="@string/first_fragment_label"
+        android:label="@string/home_fragment_label"
         tools:layout="@layout/fragment_home">
 
         <action
             android:id="@+id/action_home_to_first"
             app:destination="@id/FirstPathwayFragment" />
+
+        <action
+            android:id="@+id/action_home_to_dice"
+            app:destination="@id/DiceRollerFragment" />
+        <action
+            android:id="@+id/action_home_to_constraint"
+            app:destination="@id/ConstraintFragment" />
+
     </fragment>
 
     <fragment
         android:id="@+id/FirstPathwayFragment"
         android:name="com.harris.fundamentals.pathway1.FirstPathwayFragment"
-        android:label="Pathway 1"
+        android:label="@string/pathway1_fragment_label"
         tools:layout="@layout/fragment_first_pathway">
 
-        <!--        <action-->
-        <!--            android:id="@+id/action_FirstFragment_to_SecondFragment"-->
-        <!--            app:destination="@id/SecondFragment" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/DiceRollerFragment"
+        android:name="com.harris.fundamentals.pathway2.DiceRollerFragment"
+        android:label="@string/roll_fragment_label"
+        tools:layout="@layout/fragment_first_pathway">
+    </fragment>
+
+    <fragment
+        android:id="@+id/ConstraintFragment"
+        android:name="com.harris.fundamentals.pathway3.ConstraintFragment"
+        android:label="@string/roll_fragment_label"
+        tools:layout="@layout/fragment_constraint">
     </fragment>
 </navigation>

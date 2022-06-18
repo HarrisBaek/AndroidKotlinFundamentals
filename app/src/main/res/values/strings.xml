@@ -2,7 +2,10 @@
     <string name="app_name">AndroidKotlinFundamentals</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">Android Kotlin fundamentals</string>
-
+    <string name="home_fragment_label">Android Kotlin fundamentals</string>
+    <string name="pathway1_fragment_label">Get started</string>
+    <string name="roll_fragment_label">Image resource and compatibility</string>
+    <string name="layouts_fragment_label">Constraint layout </string>
+    <string name="constraint_fragment_label">Layouts</string>
 
 </resources>

@@ -70,6 +70,8 @@ class HomeFragment : Fragment(), HomeAdapter.OnItemClickListener {
         var nextId: Int = -1
         when (position) {
             0 -> nextId = R.id.action_home_to_first
+            1 -> nextId = R.id.action_home_to_dice
+            2 -> nextId = R.id.action_home_to_constraint
         }
         findNavController().navigate(nextId)
     }
