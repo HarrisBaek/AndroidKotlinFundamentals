@@ -5,6 +5,8 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/HomeFragment">
 
+    <include app:graph="@navigation/pathway4_nav_graph" />
+
     <fragment
         android:id="@+id/HomeFragment"
         android:name="com.harris.fundamentals.home.HomeFragment"
@@ -22,6 +24,10 @@
             android:id="@+id/action_home_to_constraint"
             app:destination="@id/ConstraintFragment" />
 
+        <action
+            android:id="@+id/action_home_to_title"
+            app:destination="@id/pathway4_nav_graph" />
+
     </fragment>
 
     <fragment
@@ -36,7 +42,7 @@
         android:id="@+id/DiceRollerFragment"
         android:name="com.harris.fundamentals.pathway2.DiceRollerFragment"
         android:label="@string/roll_fragment_label"
-        tools:layout="@layout/fragment_first_pathway">
+        tools:layout="@layout/fragment_dice_roller">
     </fragment>
 
     <fragment
@@ -45,4 +51,6 @@
         android:label="@string/roll_fragment_label"
         tools:layout="@layout/fragment_constraint">
     </fragment>
+
+
 </navigation>

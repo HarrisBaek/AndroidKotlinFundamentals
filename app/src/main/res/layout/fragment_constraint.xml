@@ -1,16 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="test"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <data>
+
+        <variable
+            name="pathway3"
+            type="com.harris.fundamentals.pathway3.ConstraintFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="@{pathway3::makeColored}">
+
+        <TextView
+            android:id="@+id/box_text_one"
+            style="@style/whiteBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:focusableInTouchMode="true"
+            android:onClick="@{pathway3::makeColored}"
+            android:text="@string/pathway3_box_one_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+
+        <TextView
+            android:id="@+id/box_text_two"
+            style="@style/whiteBox"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="16dp"
+            android:onClick="@{pathway3::makeColored}"
+            android:text="@string/pathway3_box_two_text"
+            app:layout_constraintStart_toStartOf="@+id/box_text_one"
+            app:layout_constraintTop_toBottomOf="@+id/box_text_one" />
+
+        <TextView
+            android:id="@+id/box_text_three"
+            style="@style/whiteBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:onClick="@{pathway3::makeColored}"
+            android:text="@string/pathway3_box_three_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/box_text_two"
+            app:layout_constraintTop_toTopOf="@+id/box_text_two"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/box_text_four"
+            style="@style/whiteBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:onClick="@{pathway3::makeColored}"
+            android:text="@string/pathway3_box_four_text"
+            app:layout_constraintBottom_toTopOf="@+id/box_text_five"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/box_text_two"
+            app:layout_constraintTop_toBottomOf="@+id/box_text_three" />
+
+        <TextView
+            android:id="@+id/box_text_five"
+            style="@style/whiteBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:onClick="@{pathway3::makeColored}"
+            android:text="@string/pathway3_box_five_text"
+            app:layout_constraintBottom_toBottomOf="@+id/box_text_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/box_text_two" />
+
+
+        <TextView
+            android:id="@+id/label_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/how_to_play"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/info_text"
+            app:layout_constraintStart_toStartOf="@+id/box_text_two" />
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/tap_the_boxes_and_buttons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/label_text"
+            app:layout_constraintTop_toBottomOf="@+id/box_text_two" />
+
+        <Button
+            android:id="@+id/red_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_red"
+            android:onClick="@{pathway3::makeColored}"
+            app:layout_constraintBaseline_toBaselineOf="@+id/yellow_btn"
+            app:layout_constraintEnd_toStartOf="@+id/yellow_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/yellow_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/button_yellow"
+            android:onClick="@{pathway3::makeColored}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/green_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/red_btn" />
+
+        <Button
+            android:id="@+id/green_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_green"
+            android:onClick="@{pathway3::makeColored}"
+            app:layout_constraintBaseline_toBaselineOf="@+id/yellow_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/yellow_btn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pathway4_nav_graph"
+    app:startDestination="@id/TitleFragment">
+
+    <fragment
+        android:id="@+id/TitleFragment"
+        android:name="com.harris.fundamentals.pathway4.TitleFragment"
+        android:label="@string/title_fragment_label"
+        tools:layout="@layout/fragment_title"
+        >
+        <action
+            android:id="@+id/action_title_to_game"
+            app:destination="@id/GameFragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/GameFragment"
+        android:name="com.harris.fundamentals.pathway4.GameFragment"
+        android:label="@string/game_fragment_label"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_game_to_gamewon"
+            app:destination="@id/GameWonFragment"
+            app:popUpTo="@id/GameWonFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_game_to_gameover"
+            app:destination="@id/GameOverFragment"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/GameFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/GameOverFragment"
+        android:name="com.harris.fundamentals.pathway4.GameOverFragment"
+        android:label="@string/game_over_fragment_label"
+        tools:layout="@layout/fragment_game_over" >
+        <action
+            android:id="@+id/action_gameover_to_game"
+            app:destination="@id/GameFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/GameWonFragment"
+        android:name="com.harris.fundamentals.pathway4.GameWonFragment"
+        android:label="@string/game_won_fragment_label"
+        tools:layout="@layout/fragment_game_won" >
+        <action
+            android:id="@+id/action_gamewon_to_game"
+            app:destination="@id/GameFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RuleFragment"
+        android:name="com.harris.fundamentals.pathway4.RuleFragment"
+        android:label="@string/rule_fragment_label"
+        tools:layout="@layout/fragment_rule" />
+
+    <fragment
+        android:id="@+id/AboutFragment"
+        android:name="com.harris.fundamentals.pathway4.AboutFragment"
+        android:label="@string/about_fragment_label"
+        tools:layout="@layout/fragment_about" />
+</navigation>

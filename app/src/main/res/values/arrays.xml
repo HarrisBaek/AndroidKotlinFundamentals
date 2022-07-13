@@ -33,24 +33,24 @@
     </string-array>
 
     <string-array name="menu_2">
-        <item name="menu_1_course">Pathway 2</item>
-        <item name="menu_1_title">Building\nan Interactive App</item>
-        <item name="menu_1_desc">Basic Android app anatomy\nImage resources and compatibility\nLearn to help yourself</item>
-        <item name="menu_1_date">10 Dec 2022</item>
+        <item name="menu_2_course">Pathway 2</item>
+        <item name="menu_2_title">Building\nan Interactive App</item>
+        <item name="menu_2_desc">Basic Android app anatomy\nImage resources and compatibility\nLearn to help yourself</item>
+        <item name="menu_2_date">10 Dec 2022</item>
     </string-array>
 
     <string-array name="menu_3">
-        <item name="menu_1_course">Pathway 3</item>
-        <item name="menu_1_title"> Layouts</item>
-        <item name="menu_1_desc">Linear layout using the Layout Editor\nAdd user interactivity\nConstraint layout using the Layout Editor\nData-binding basics</item>
-        <item name="menu_1_date">10 Dec 2022</item>
+        <item name="menu_3_course">Pathway 3</item>
+        <item name="menu_3_title"> Layouts</item>
+        <item name="menu_3_desc">Linear layout using the Layout Editor\nAdd user interactivity\nConstraint layout using the Layout Editor\nData-binding basics</item>
+        <item name="menu_3_date">10 Dec 2022</item>
     </string-array>
 
     <string-array name="menu_4">
-        <item name="menu_1_course">Pathway 4</item>
-        <item name="menu_1_title">Navigation</item>
-        <item name="menu_1_desc">Create a fragment\nDefine navigation paths\nStart an external activity</item>
-        <item name="menu_1_date">10 Dec 2022</item>
+        <item name="menu_4_course">Pathway 4</item>
+        <item name="menu_4_title">Navigation</item>
+        <item name="menu_4_desc">Create a fragment\nDefine navigation paths\nStart an external activity</item>
+        <item name="menu_4_date">10 Dec 2022</item>
     </string-array>
 
 

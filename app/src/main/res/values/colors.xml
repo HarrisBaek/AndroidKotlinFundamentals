@@ -18,4 +18,12 @@
     <color name="point_2">#d6d6d6</color>
     <color name="point_3">#da5232</color>
 
+    <color name="my_green">#12C700</color>
+    <color name="my_red">#E54304</color>
+    <color name="my_yellow">#FFC107</color>
+
+
+    <color name="youWinBackground">#B7F8C9</color>
+    <color name="gameOverBackground">#f8bbd0</color>
+
 </resources>
